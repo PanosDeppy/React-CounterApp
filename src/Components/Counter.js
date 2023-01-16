@@ -3,7 +3,7 @@
 import { useState } from "react";
 
 export const Counter = () => {
-  /* After you write what you want to return,
+  /* After you write what you want to return (the main div and other html elements you want),
     you can write the logic here and then
     make the modifications you need on the return
     such as write the function onClick in the buttons: */
