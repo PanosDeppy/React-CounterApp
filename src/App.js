@@ -1,25 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import { Banner } from "./Components/Banner";
+import { Counter } from "./Components/Counter";
 
-function App() {
+/* Create our main function-based component and inside this component we will build our app.
+We create a variable in which we store an arrow function which returns the main div
+and in this div we will add every other component we create*/
+
+export const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Banner />
+      <Counter />
     </div>
   );
-}
-
-export default App;
+};
